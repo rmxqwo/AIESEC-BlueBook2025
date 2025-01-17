@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processed Images</title>
+</head>
+<body>
+    <h1>Processed Images</h1>
+    <h2>Gray Image</h2>
+    <img src="{{ url_for('static', filename='gray.png') }}" alt="Gray Image">
+    <h2>Thresholded Image</h2>
+    <img src="{{ url_for('static', filename='thresholded.png') }}" alt="Thresholded Image">
+    <h2>Adaptive Thresholded Image</h2>
+    <img src="{{ url_for('static', filename='adaptive_thresholded.png') }}" alt="Adaptive Thresholded Image">
+    <br>
+    <a href="{{ url_for('index') }}">Upload another image</a>
+</body>
+</html>
