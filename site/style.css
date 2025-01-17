@@ -1,38 +1,17 @@
 body {
-    background-color: black;
-    color: white;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #f4f4f4;
     margin: 0;
+    padding: 20px;
 }
 
-.container {
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
     text-align: center;
 }
 
-.title {
-    margin-bottom: 20px;
-}
-
-.styled-button {
-    background-color: white; /* Цвет кнопки */
-    color: black;            /* Цвет текста кнопки */
-    border: none;           /* Убираем обводку */
-    padding: 15px 30px;     /* Отступы внутри кнопки */
-    margin: 10px;           /* Отступы между кнопками */
-    font-size: 16px;        /* Размер шрифта */
-    cursor: pointer;        /* Указатель курсора */
-    transition: background-color 0.3s ease, transform 0.2s; /* Анимации */
-}
-
-.styled-button:hover {
-    background-color: gray; /* Цвет кнопки при наведении */
-    transform: scale(1.05); /* Увеличение кнопки при наведении */
-}
-
-.styled-button:active {
-    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+main {
+    margin-top: 20px;
 }
