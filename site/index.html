@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт на JavaScript</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Change Text Example</title>
 </head>
 <body>
-    <header>
-        <h1>Добро пожаловать на мой сайт!</h1>
-    </header>
-    <main>
-        <p id="greeting">Привет, мир!</p>
-        <button id="changeTextButton">Изменить текст</button>
-    </main>
-    <script src="scripts/script.js"></script>
+    <h1 id="greeting">Привет, мир!</h1> <!-- Initial text -->
+    <button id="changeTextButton">Изменить текст</button> <!-- Button to change text -->
+
+    <script>
+        document.getElementById('changeTextButton').addEventListener('click', function() {
+            document.getElementById('greeting').textContent = 'Текст изменен!';
+        });
+    </script>
 </body>
 </html>
